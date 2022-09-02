@@ -1,13 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: hsl(185, 75%, 39%);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1, ul>li:first-child{
+  color:hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size:18px;
+}
+
+p, ul>li:last-child{
+  color:hsl(0, 0%, 59%);
+}
+
+hr{
+  border: 0.5px hsl(0, 0%, 59%) solid;
+  margin-bottom: 1rem;
+}
+
+.top{
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  top:-350px;
+  left:-150px;
+  z-index: -1;
+}
+
+.bottom{
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    top: 500px;
+    left: 700px;
+    z-index: -1;
 }
